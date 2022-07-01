@@ -89,7 +89,8 @@ module Faraday
         %i[ssl_ca_file ca_file],
         %i[ssl_version version],
         %i[ssl_min_version min_version],
-        %i[ssl_max_version max_version]
+        %i[ssl_max_version max_version],
+        %i[verify_hostname verify_hostname]
       ].freeze
 
       def amend_opts_with_ssl!(opts, ssl)
